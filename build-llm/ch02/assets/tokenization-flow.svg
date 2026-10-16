@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <rect width="1200" height="360" fill="#f8fafc"/>
+  <text x="600" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">How tokenization works</text>
+  <rect x="55" y="120" width="270" height="120" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+  <text x="190" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#1e3a8a">Input text</text>
+  <text x="190" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#1e3a8a">Hello, world!</text>
+  <path d="M345 180 H425" stroke="#64748b" stroke-width="5" fill="none"/>
+  <path d="M425 180 l-16 -11 v22 z" fill="#64748b"/>
+  <rect x="445" y="120" width="300" height="120" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+  <text x="595" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#166534">Tokens</text>
+  <text x="595" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#166534">Hello  ,  world  !</text>
+  <path d="M765 180 H845" stroke="#64748b" stroke-width="5" fill="none"/>
+  <path d="M845 180 l-16 -11 v22 z" fill="#64748b"/>
+  <rect x="865" y="120" width="280" height="120" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+  <text x="1005" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#92400e">Token IDs</text>
+  <text x="1005" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#92400e">15496  11  995  0</text>
+  <text x="600" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" fill="#475569">A language model reads token IDs, not raw text.</text>
+</svg>
