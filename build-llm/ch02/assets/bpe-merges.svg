@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440">
+  <rect width="1000" height="440" fill="#f8fafc"/>
+  <text x="500" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">How BPE creates a token</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="50" y="110" width="240" height="210" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+    <text x="170" y="152" font-size="22" font-weight="700" fill="#1e3a8a">1. Start small</text>
+    <text x="170" y="201" font-size="26" fill="#1e3a8a">t  o  d  o</text>
+    <text x="170" y="246" font-size="26" fill="#1e3a8a">t  o  d  o</text>
+    <text x="170" y="286" font-size="17" fill="#475569">training text</text>
+    <path d="M290 215h100" stroke="#64748b" stroke-width="5"/><path d="M390 215l-16-11v22z" fill="#64748b"/>
+    <rect x="410" y="110" width="240" height="210" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+    <text x="530" y="152" font-size="22" font-weight="700" fill="#92400e">2. Count pairs</text>
+    <text x="530" y="210" font-size="25" fill="#92400e">t + o</text>
+    <text x="530" y="247" font-size="20" fill="#92400e">appears often</text>
+    <path d="M650 215h100" stroke="#64748b" stroke-width="5"/><path d="M750 215l-16-11v22z" fill="#64748b"/>
+    <rect x="770" y="110" width="180" height="210" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+    <text x="860" y="152" font-size="22" font-weight="700" fill="#166534">3. Merge</text>
+    <text x="860" y="215" font-size="34" font-weight="700" fill="#166534">to</text>
+    <text x="860" y="255" font-size="18" fill="#166534">new token</text>
+  </g>
+  <text x="500" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#475569">The process repeats to create tokens for frequent pieces of text.</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440">
+  <rect width="1000" height="440" fill="#f8fafc"/>
+  <text x="500" y="52" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">How BPE reads a new word</text>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="45" y="125" width="240" height="180" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+    <text x="165" y="170" font-size="21" font-weight="700" fill="#1e3a8a">Input word</text>
+    <text x="165" y="238" font-size="32" font-weight="700" fill="#1e3a8a">unhappy</text>
+    <path d="M285 215h95" stroke="#64748b" stroke-width="5"/><path d="M380 215l-16-11v22z" fill="#64748b"/>
+    <rect x="405" y="125" width="260" height="180" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+    <text x="535" y="170" font-size="21" font-weight="700" fill="#92400e">Known pieces</text>
+    <text x="535" y="238" font-size="30" font-weight="700" fill="#92400e">un + happy</text>
+    <path d="M665 215h95" stroke="#64748b" stroke-width="5"/><path d="M760 215l-16-11v22z" fill="#64748b"/>
+    <rect x="785" y="125" width="170" height="180" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+    <text x="870" y="170" font-size="21" font-weight="700" fill="#166534">Tokens</text>
+    <text x="870" y="238" font-size="25" font-weight="700" fill="#166534">[42, 981]</text>
+  </g>
+  <text x="500" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#475569">Even without the full word, BPE can still represent it.</text>
+</svg>
