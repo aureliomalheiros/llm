@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="390" viewBox="0 0 960 390" role="img" aria-labelledby="title desc">
+  <title id="title">Data sampling with a sliding window</title>
+  <desc id="desc">A sequence of token IDs is sampled with a window of four input tokens and one target token. The window shifts one token at a time to create the next training example.</desc>
+  <defs>
+    <style>
+      .heading { font: 700 23px Arial, sans-serif; fill: #172033; }
+      .label { font: 600 16px Arial, sans-serif; fill: #172033; }
+      .small { font: 14px Arial, sans-serif; fill: #526077; }
+      .token { font: 700 17px Arial, sans-serif; fill: #172033; text-anchor: middle; dominant-baseline: middle; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#526077"/></marker>
+  </defs>
+  <rect width="960" height="390" rx="18" fill="#f7f9fc"/>
+  <text x="40" y="48" class="heading">Data sampling with a sliding window</text>
+  <text x="40" y="78" class="small">One long token sequence becomes many input-target training examples.</text>
+  <text x="40" y="120" class="label">Token IDs</text>
+  <g>
+    <rect x="40" y="140" width="74" height="48" rx="8" fill="#dbeafe"/><text x="77" y="164" class="token">40</text>
+    <rect x="124" y="140" width="74" height="48" rx="8" fill="#dbeafe"/><text x="161" y="164" class="token">367</text>
+    <rect x="208" y="140" width="74" height="48" rx="8" fill="#dbeafe"/><text x="245" y="164" class="token">288</text>
+    <rect x="292" y="140" width="74" height="48" rx="8" fill="#dbeafe"/><text x="329" y="164" class="token">213</text>
+    <rect x="376" y="140" width="74" height="48" rx="8" fill="#fde68a"/><text x="413" y="164" class="token">257</text>
+    <rect x="460" y="140" width="74" height="48" rx="8" fill="#eef2f7"/><text x="497" y="164" class="token">…</text>
+  </g>
+  <path d="M230 205 C230 228, 260 228, 260 246" fill="none" stroke="#526077" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M412 205 C412 228, 650 228, 650 246" fill="none" stroke="#526077" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="40" y="272" class="label">Training example</text>
+  <text x="40" y="300" class="small">Input (context window)</text>
+  <g>
+    <rect x="220" y="276" width="64" height="46" rx="8" fill="#dbeafe"/><text x="252" y="299" class="token">40</text>
+    <rect x="292" y="276" width="64" height="46" rx="8" fill="#dbeafe"/><text x="324" y="299" class="token">367</text>
+    <rect x="364" y="276" width="64" height="46" rx="8" fill="#dbeafe"/><text x="396" y="299" class="token">288</text>
+    <rect x="436" y="276" width="64" height="46" rx="8" fill="#dbeafe"/><text x="468" y="299" class="token">213</text>
+  </g>
+  <text x="565" y="300" class="small">Target</text>
+  <rect x="640" y="276" width="64" height="46" rx="8" fill="#fde68a"/><text x="672" y="299" class="token">257</text>
+  <path d="M755 299 H865" stroke="#526077" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="720" y="350" class="small">Shift by one token and repeat</text>
+</svg>
