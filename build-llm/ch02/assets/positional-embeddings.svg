@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Encoding word positions with positional embeddings</title>
+  <desc id="desc">Token embeddings and positional embeddings are added element by element to make each input vector aware of both token identity and sequence position.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#64748b"/></marker>
+  </defs>
+  <rect width="1200" height="600" fill="#f8fafc"/>
+  <text x="600" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">Encoding word positions</text>
+  <text x="600" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#475569">The model adds token and positional embeddings element by element.</text>
+
+  <rect x="52" y="145" width="230" height="270" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+  <text x="167" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#1e3a8a">Token embeddings</text>
+  <text x="167" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#1e3a8a">what each token means</text>
+  <g font-family="Arial, sans-serif" font-size="16" fill="#1e3a8a">
+    <rect x="78" y="245" width="178" height="38" rx="5" fill="#bfdbfe"/><text x="167" y="270" text-anchor="middle">Hello  [0.12, 0.54, ...]</text>
+    <rect x="78" y="297" width="178" height="38" rx="5" fill="#bfdbfe"/><text x="167" y="322" text-anchor="middle">world  [-0.31, 0.68, ...]</text>
+    <rect x="78" y="349" width="178" height="38" rx="5" fill="#bfdbfe"/><text x="167" y="374" text-anchor="middle">!      [0.07, -0.19, ...]</text>
+  </g>
+
+  <rect x="353" y="145" width="230" height="270" rx="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="3"/>
+  <text x="468" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#5b21b6">Positional embeddings</text>
+  <text x="468" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5b21b6">where each token appears</text>
+  <g font-family="Arial, sans-serif" font-size="16" fill="#5b21b6">
+    <rect x="379" y="245" width="178" height="38" rx="5" fill="#ddd6fe"/><text x="468" y="270" text-anchor="middle">position 0  [0.21, ...]</text>
+    <rect x="379" y="297" width="178" height="38" rx="5" fill="#ddd6fe"/><text x="468" y="322" text-anchor="middle">position 1  [-0.08, ...]</text>
+    <rect x="379" y="349" width="178" height="38" rx="5" fill="#ddd6fe"/><text x="468" y="374" text-anchor="middle">position 2  [0.43, ...]</text>
+  </g>
+
+  <path d="M602 280 H662" stroke="#64748b" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M302 280 H662" stroke="#64748b" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+  <circle cx="700" cy="280" r="37" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+  <text x="700" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#92400e">+</text>
+
+  <path d="M742 280 H810" stroke="#64748b" stroke-width="5" fill="none" marker-end="url(#arrow)"/>
+  <rect x="830" y="145" width="320" height="270" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+  <text x="990" y="184" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#166534">Input embeddings</text>
+  <text x="990" y="212" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#166534">token identity + position</text>
+  <g font-family="Arial, sans-serif" font-size="16" fill="#166534">
+    <rect x="856" y="245" width="268" height="38" rx="5" fill="#bbf7d0"/><text x="990" y="270" text-anchor="middle">Hello at position 0  [0.33, ...]</text>
+    <rect x="856" y="297" width="268" height="38" rx="5" fill="#bbf7d0"/><text x="990" y="322" text-anchor="middle">world at position 1  [-0.39, ...]</text>
+    <rect x="856" y="349" width="268" height="38" rx="5" fill="#bbf7d0"/><text x="990" y="374" text-anchor="middle">! at position 2  [0.50, ...]</text>
+  </g>
+
+  <text x="600" y="492" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#475569">The same token can receive a different input representation when it appears in a different position.</text>
+  <text x="600" y="528" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#64748b">Both embedding tables are learned during training and use the same embedding dimension.</text>
+</svg>
